@@ -1,0 +1,22 @@
+{% extends "courses/base.html" %}
+
+{% block title %}Connecter{% endblock %}
+
+{% block content %}
+  <h1>Connecter</h1>
+  <div class="module">
+    {% if form.errors %}
+      <p>Votre nom d'utilisateur et votre mot de passe ne correspondent pas. Veuillez réessayer</p>
+    {% else %}
+      <p>Veuillez utiliser le formulaire suivant pour vous connecter:</p>
+    {% endif %}
+    <div class="login-form">
+      <form action="{% url 'login' %}" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        <p><input type="submit" value="Connecter"></p>
+      </form>
+    </div>
+  </div>
+{% endblock %}

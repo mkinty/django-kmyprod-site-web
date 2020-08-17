@@ -1,0 +1,49 @@
+{% extends "about/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    .about-header {
+    background-image: url('{% static "img/background.jpg" %}');
+    padding: 20px 0 50px;
+    height:100%;
+    weight:100%;
+}
+
+
+
+</style>
+
+<!-- hearder -->
+
+<div class="text-center about-header">
+<a href="#about">
+  <span class="fa fa-chevron-up" aria-hidden="true"></span>
+</a>
+    <h1>Nos Projets</h1>
+</div>
+
+
+
+
+<!-- KmyProd contact-->
+
+<div class="container-fliud" id="kmyprod-projet">
+  <div class="row projet-content">
+    <div class="col-12">
+      <div class="kmyprod-projet-block">
+        <h1>EN CONSTRUCTION...</h1>
+        <hr class="red-divider">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- endcontact -->
+
+
+{% endblock content %}

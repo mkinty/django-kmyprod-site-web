@@ -1,0 +1,15 @@
+{% extends "courses/base.html" %}
+
+{% block title %}Supprimer le cours{% endblock %}
+
+{% block content %}
+  <h1>Supprimer le cours "{{ object.title }}"</h1>
+
+  <div class="module">
+    <form method="post">
+      {% csrf_token %}
+      <p>Etes-vous sûr que vous voulez supprimer "{{ object.title }}"?</p>
+      <input type="submit" value="Confirm">
+    </form>
+  </div>
+{% endblock %}

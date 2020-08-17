@@ -1,0 +1,73 @@
+{% extends "about/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    .about-header {
+    background-image: url('{% static "img/background.jpg" %}');
+    padding: 20px 0 50px;
+    height:100%;
+    weight:100%;
+}
+
+
+
+</style>
+
+<!-- hearder -->
+
+<div class="text-center about-header">
+<a href="#about">
+  <span class="fa fa-chevron-up" aria-hidden="true"></span>
+</a>
+    <h1>Nos services</h1>
+    <h2>Formations gratuites, Produits Agroalimentaires, Gestion De Biens Immobiliers</h2>
+</div>
+
+<!-- content -->
+
+<div class="container-fliud" id="services">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="services-block">
+        <h3>Education</h3>
+        <hr class="red-divider">
+        <p>
+          L' éducation est un bien public qui contribue au développement social, culturel, démocratique et économique.
+        <p/>
+
+        <p>
+        Tout être humain a le droit à l'éducation. Notre objectif chez KmyProd, est de contribuer à l'éducation des élèves quelque soit la localité,
+        à les former en vue de leur insertion sociale et professionnelle.
+        </p>
+        <p>
+          Nous accompagnons les élèves dans l'acquisition des connaissances et leur mise et pratique. Tout élève de KmyProd bénéfici d'un suivi personalisé, en ligne ou à domicile.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="services-block">
+        <h3>Agroalimentaire</h3>
+        <hr class="red-divider">
+        <p>Un développement durable nécessite la mise en valeur des ressources naturelles</p>
+        <p>Mettre l’accent sur le secteur agricole est non seulement un moyen pour KmyProd de mettre en valeur des produits locaux en procédant à leur production et à leur commercialisation, mais aussi de revaloriser ce secteur dans les zones rural</p>
+        <p>Le principal objectif de KmyProd dans ce secteur est de vous offrir des produits locaux de très bonne qualité.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="services-block">
+        <h3>Immobilier</h3>
+        <hr class="red-divider">
+        <p>Pour avoir une bonne rentabilité de son investissement locatif, vous devez commencer par bien savoir la calculer. </p>
+        <p>Selon les paramètres pris en compte, vous pouvez vous baser sur la rentabilité brute, la rentabilité nette de frais et charges, ou bien la rentabilité nette.</p>
+        <p>Chez KmyProd, nous avons mis à votre disposition une équipe compétente et dinamique, pour vous aider a optimiser la rentabilité de vos investissements locatifs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

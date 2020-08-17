@@ -1,0 +1,120 @@
+{% extends "about/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    .about-header {
+    background-image: url('{% static "img/background.jpg" %}');
+    padding: 20px 0 50px;
+    height:100%;
+    weight:100%;
+}
+
+
+
+</style>
+
+<!-- hearder -->
+
+<div class="text-center about-header">
+<a href="#about">
+  <span class="fa fa-chevron-up" aria-hidden="true"></span>
+</a>
+    <h1>Les professeurs</h1>
+</div>
+
+
+
+<!-- presentation -->
+
+<!-- KmyProd -->
+
+<div class="container-fliud" id="kmyprod-prof">
+  <div class="row">
+    <div class="col-md-8 order-2 order-md-12">
+      <div class="kmyprod-prof-block">
+        <h3>Qui sont-ils ?</h3>
+        <hr class="red-divider">
+        <p>Nos professeurs sont soigneusement sélectionnés par notre équipe d'admissions, pour vous offire une meilleur pédagogie possible.
+            De parcours mathématiques appliquées, statistiques, informatique, sciences de la vie et de la terre, droit, lettre, anglais, médecine, etc..., ils sont tous expérimentés dans leurs domaines.
+            Ils travailleront avec vous sur des notions de cours mal assimilées, sur de nouveaux conceptes, sur des exercices d’applications,
+et vous offriront des conseils en méthodologie et organisation du travail.</p>
+
+      </div>
+    </div>
+    <div class="col-md-4 order-first order-md-12">
+        <div class="kmyprod-prof-img">
+                  <img class="card-img-top" src='{% static "img/bureau_moustaphak.jpg" %}' alt="Moustapha KINTY">
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Professeurs -->
+
+<div class="professeurs">
+    <div class = "row">
+
+       <div class = "col-md-4 prof">
+          <div class="prof-block">
+              <div class="prof-profile">
+                  <img class="card-img-top rounded-circle" src='{% static "img/prof_moustaphak.jpg" %}' alt="Moustapha KINTY">
+              </div>
+              <div class="prof-body">
+                <h5 class="prof-title">Moustapha Kinty</h5>
+                <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                <p class="prof-text">
+                    Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science.
+                    Après sa formation chez Jedha, il a intégré l'équite enseignant de Jedha comme assistant formateur en data science. Moustapha enseigne aussi les mathématiques chez Acadomia.
+                    Déternimé à réaliser son rêve, il co-fonde KmyProd avec Tombon et Idrissa, deux de ses amis.
+                </p>
+              </div>
+            </div>
+       </div>
+
+       <div class = "col-md-4 prof">
+          <div class="prof-block">
+              <div class="prof-profile">
+                  <img class="card-img-top rounded-circle" src='{% static "img/prof_tombon.jpg" %}' alt="Moustapha KINTY">
+              </div>
+              <div class="prof-body">
+                <h5 class="prof-title">Tombon Maréna</h5>
+                <h6 class="prof-post">Co-founder @ KmyProd</h6>
+                <p class="prof-text">
+                    Tombon est le directeur marketing, immobilier et co-fondateur de KmyProd. Juriste de formation, Tombon est un grand défendeur des droits de tout être humain
+                    Expert en droit de l’homme plus précisément sur la question de la protection de l’intégrité physique des détenus,
+                    Tombon accompagne plusieurs jeunes dans l'aquisition des connaissances et la lutte pour leur droit.
+                </p>
+              </div>
+            </div>
+       </div>
+
+       <div class = "col-md-4 prof">
+          <div class="prof-block">
+              <div class="prof-profile">
+                  <img class="card-img-top rounded-circle" src='{% static "img/prof_idrissa.jpg" %}' alt="Moustapha KINTY Bureau-prof">
+              </div>
+              <div class="prof-body">
+                <h5 class="prof-title">Idrissa Yankatte</h5>
+                <h6 class="prof-post">Co-founder @ KmyProd</h6>
+                <p class="prof-text">
+                    Idrissa est le directeur agricol et co-fondateurs de KmyProd. Passionné par l'agro-business,
+                    Idrissa coordonne aujourd'hui le secteur agroalimentaire de KmyProd.
+                    Médecin en formation, Idrissa ne sèche d'encourager les jeunes à embrasser la science médicale. Préoccupé par la santé de tout être humain, Idrissa intervient aussi dans des structures para-privées de manière bénovol.
+                </p>
+              </div>
+            </div>
+       </div>
+
+    </div>
+</div>
+
+<!-- endpresentation -->
+
+
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+{% load bootstrap4 %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ post.title }}</h1>
+  <p class="date">
+    Publié {{ post.publish }} par {{ post.author }}
+  </p>
+  {{ post.body|markdown }}
+  <p>
+    <a href="{% url 'blog:post_share' post.id %}">
+      Partager cette publication
+    </a>
+  </p>
+  <h2>Articles similaires</h2>
+  {% for post in similar_posts %}
+    <p>
+      <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+    </p>
+  {% empty %}
+    Il n'y a pas encore d'articles similaires.
+  {% endfor %}
+  {% with comments.count as total_comments %}
+    <h2>
+      {{ total_comments }} commentaire{{ total_comments|pluralize }}
+    </h2>
+  {% endwith %}
+  {% for comment in comments %}
+    <div class="comment">
+      <p class="info">
+        Commentaire {{ forloop.counter }}, par {{ comment.name }},
+        {{ comment.created }}
+      </p>
+      {{ comment.body|linebreaks }}
+    </div>
+  {% empty %}
+    <p>Il n'y a pas encore de commentaires.</p>
+  {% endfor %}
+  {% if new_comment %}
+    <h2>Votre commentaire a été ajouté.</h2>
+  {% else %}
+    <h2>Ajouter un nouveau commentaire</h2>
+    <form method="post">
+      {{ comment_form.as_p }}
+      {% csrf_token %}
+      <p><input type="submit" value="Ajouter un commentaire"></p>
+    </form>
+  {% endif %}
+{% endblock %}

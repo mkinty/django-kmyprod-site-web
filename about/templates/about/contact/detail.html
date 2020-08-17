@@ -1,0 +1,70 @@
+{% extends "about/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    .about-header {
+    background-image: url('{% static "img/background.jpg" %}');
+    padding: 20px 0 50px;
+    height:100%;
+    weight:100%;
+}
+</style>
+
+<!-- hearder -->
+
+<div class="text-center about-header">
+<a href="#about">
+  <span class="fa fa-chevron-up" aria-hidden="true"></span>
+</a>
+    <h1>Page de contact</h1>
+</div>
+
+
+
+
+<!-- KmyProd contact-->
+
+<div class="container-fliud" id="kmyprod-cont">
+  <div class="row contact-content">
+    <div class="col-md-3 order-first order-md-12">
+        <div class="kmyprod-cont-img">
+                  <img class="card-img-top" src='{% static "img/tombon_bureau.jpg" %}' alt="Moustapha KINTY Contact">
+        </div>
+    </div>
+    <div class="col-md-9 order-2 order-md-12">
+      <div class="kmyprod-cont-block">
+        <h3>Nos contact</h3>
+        <hr class="red-divider">
+
+         <div class="row">
+             <div class="col-4">
+                  <h5>Equipe Admissions</h5>
+                  <p>admin@kmyprod.com</p>
+                  <p>+221 77 960 85 98 </p>
+             </div>
+             <div class="col-4">
+                  <h5>Directeur Marketing</h5>
+                  <p>tombon@kmyprod.com</p>
+                  <p>+221 77 960 85 98</p>
+             </div>
+             <div class="col-4">
+                  <h5>Directeur Agroalimentaire</h5>
+                  <p>idrissa@kmyprod.com</p>
+                  <p>+221 78 239 57 59</p>
+             </div>
+         </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- endcontact -->
+
+
+{% endblock content %}

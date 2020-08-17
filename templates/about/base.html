@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+{% load background_image_tags %}
+
+<html>
+<head>
+    <title>{% block title %}  Kmyprod{% endblock %}</title>
+    <link href="{% static 'css/about/styles.css' %}" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap4/bootstrap.min.css' %}">
+</head>
+
+<body class="about-body" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar sticky-top navbar-expand-md  navbar-dark header" >
+      <a href="{% url 'kmyprod' %}" class="navbar-brand"></a>
+      <a href="{% url 'kmyprod' %}" class="navbar-brand">KmyProd</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+              {% for item in navigation_items %}
+                <li class="nav-item  {% if item.active %}active{% endif %}">
+                    <a class="nav-link" href="{{ item.url }} ">{{ item.name }}</a>
+                </li>
+              {% endfor %}
+          </ul>
+      </div>
+  </nav>
+
+
+
+{% block content %}
+
+{% endblock content %}
+
+<!-- FOOTER -->
+
+<footer class="text-center">
+<a href="#about">
+  <span class="fa fa-chevron-up" aria-hidden="true"></span>
+</a>
+    <h5>Moustapha KINTY</h5>
+    <h5>Copyright &copy; 2020 KmyProd - Tous Droits Réservés</h5>
+</footer>
+
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  <script>
+      function lire_plus_ou_moin() {
+      var d = document.getElementById("dots");
+      var plus_de_text = document.getElementById("more");
+      var monBoutton = document.getElementById("mybutton");
+      if (d.style.display === "none") {
+        d.style.display = "inline";
+        plus_de_text.style.display = "none";
+        monBoutton.innerHTML = "Lire plus";
+      } else {
+        d.style.display = "none";
+        plus_de_text.style.display = "inline";
+        monBoutton.innerHTML = "Lire moins";
+      }
+    }
+
+
+  </script>
+
+
+<!-- ckeditor - prism -->
+<script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'prism/css/prism.css' %}">
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+{% extends "about/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    .about-header {
+    background-image: url('{% static "img/background.jpg" %}');
+    padding: 20px 0 100px;
+    height:100%;
+    weight:100%;
+}
+
+.moustapha{
+  background-image: url('{% static 'img/moustaphak.jpg' %}');
+  padding: 20px 0 130px;
+  height:100%;
+  max-width : 100%;
+  height: 755px;
+}
+
+.tombon{
+  background-image: url('{% static 'img/tombon.jpg' %}');
+  padding: 20px 0 120px;
+  height:100%;
+  max-width : 100%;
+  height: 755px;
+}
+
+
+.idrissa{
+  background-image: url('{% static 'img/idrissa.jpg' %}');
+  padding: 20px 0 130px;
+  height:100%;
+  max-width : 100%;
+  height: 755px;
+}
+
+</style>
+
+<!-- hearder -->
+
+<div class="text-center about-header">
+<a href="#about">
+  <span class="fa fa-chevron-up" aria-hidden="true"></span>
+</a>
+    <h1>Education, Agroalimentaire, Elevage & Immobilier</h1>
+    <a href="{% url 'projets' %}" class="button1">Nos Projets</a>
+</div>
+
+<!-- services content -->
+
+<div class="container-fliud" id="services">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="services-block">
+        <h3>Education</h3>
+        <hr class="red-divider">
+        <p>
+          L' éducation est un bien public qui contribue au développement social, culturel, démocratique et économique.
+        <p/>
+
+        <p>
+        Tout être humain a le droit à l'éducation. Notre objectif chez KmyProd, est de contribuer à l'éducation des élèves quelque soit la localité,
+        à les former en vue de leur insertion sociale et professionnelle.
+        </p>
+        <p>
+          Nous accompagnons les élèves dans l'acquisition des connaissances et leur mise et pratique. Tout élève de KmyProd bénéficie d'un suivi personalisé, en ligne ou à domicile.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="services-block">
+        <h3>Agroalimentaire</h3>
+        <hr class="red-divider">
+        <p>Un développement durable nécessite la mise en valeur des ressources naturelles</p>
+        <p>Mettre l’accent sur le secteur agricole est non seulement un moyen pour KmyProd de mettre en valeur des produits locaux en procédant à leur production et à leur commercialisation, mais aussi de revaloriser ce secteur dans les zones rurales</p>
+        <p>Le principal objectif de KmyProd dans ce secteur est de vous offrir des produits locaux de très bonne qualité.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="services-block">
+        <h3>Immobilier</h3>
+        <hr class="red-divider">
+        <p>Pour avoir une bonne rentabilité de son investissement locatif, vous devez commencer par bien savoir la calculer. </p>
+        <p>Selon les paramètres pris en compte, vous pouvez vous baser sur la rentabilité brute, la rentabilité nette de frais et charges, ou bien la rentabilité nette.</p>
+        <p>Chez KmyProd, nous avons mis à votre disposition une équipe compétente et dinamique, pour vous aider à optimiser la rentabilité de vos investissements locatifs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KmyProd -->
+
+<div class="container-fliud" id="kmyprod">
+  <div class="row">
+    <div class="col-12">
+      <div class="kmyprod-block">
+        <h3>Qui sommes-nous ?</h3>
+        <hr class="red-divider">
+      {% autoescape on %}
+        <p>
+            Une Société à Responsabilité limité dénommer KMYPROD qui désigne KINTY MARENA YANKATTE PRODUCTIONS. Basée au Sénégal, KmyProd est le fruit de trois jeunes Sénéglais, <a href="#moustapha-block">Moustapha KINTY</a>, <a href="#tombon-block">Tombon MARENA</a> et <a href="#idrissa-block">Idrissa YANKATTE</a>, animés par l'envie de contribuer au développement du continent Africain.
+        <br>
+        <br>
+            Etant conscient qu’un développement durable nécessite la mise en valeur des ressources naturelles nous avons décidé de mettre l’accent sur le secteur agricole qui d’ailleurs nous tient à cœur car, depuis tout petit nous cultivons la terre avec nos parents. Ce qui nous donne une certaine connaissance et maitrise de la culture de l’arachide, du riz, du maïs, etc. Nous avons décidé d’orienter notre projet dans ce secteur parce qu’il est à la base du développement local et nous cherchons tout simplement à le valoriser afin de réduire considérablement le manque d’emploi et de permettre aux jeunes paysans de travailler dans la dignité pour satisfaire leurs besoins et ceux de leur famille et éviter en même temps l’exode rural.
+          <span id="dots"><strong>...</strong></span>
+          <span id="more">
+        <br>
+        <br>
+            Nous avons constaté en outre, qu’un développement durable passe nécessairement par la mise en valeur des produits locaux, c’est la raison pour laquelle nous avons décidé de procéder à leur production et à leur commercialisation. De ce commerce nous cherchons à répondre aux besoins alimentaires de la population locale à un prix raisonnable pour minimiser l’importation et favoriser leurs consommations.
+        <br>
+        <br>
+            Nous avons décidé d’œuvrer également dans l’éducation, dans l’élevage, dans l’industrie, dans l’immobilier ou mobilier, dans le transport, dans l’assurance et banque, et dans la santé, car nous constatons que ces différents secteurs sont rentables et emploient des milliers de personnes. Par conséquence, leurs exploitations contribueront aussi à lutter contre le manque d’emplois provoquant souvent l’exode rural et l’insécurité dans de grandes villes comme Kaolack, Dakar etc.
+        <br>
+        <br>
+            Avec KmyProd nous envisageons de créer les bases d’un développement durable en mettant l’accent sur la production et la commercialisation des produits locaux afin de réduire considérablement le chômage. Nous cherchons également à sauvegarder la dignité de l’être humain par la création des conditions de travail descend permettant à tout citoyen ambitieux de gagner sa vie honnêtement.
+        </span>
+        </p>
+          <button type="button"
+              onclick="lire_plus_ou_moin()"
+              class="btn btn-link"
+              id="mybutton">
+              Lire plus
+          </button>
+    {% endautoescape %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- presentation -->
+
+<div class="container-fluid" id="moustapha-block">
+  <div class="row">
+    <div class=" col-md-6 order-2 order-md-12 moustapha">
+
+    </div>
+    <div class="presentation-text col-md-6 order-first order-md-12" >
+        <h3>Moustapha KINTY - Data Scientist</h3>
+        <hr class="divider">
+        <p>Mathématicien, statisticien de formation, je dispose de bonnes compétences en algèbre linéaire, en fonctions de plusieurs variabres, en statistiques, en machine learning, et en programmation en Python.</p>
+        <p>J'ai travaillé sur plusieurs projets de machine learning, accompagné plusieurs stagiaires en data science chez Jedha.</p>
+        <p>Une bonne partie de mon travaille consiste à :</p>
+        <p>
+            <ul class="job">
+                <li>Extraire et nettoyer les données,</li>
+                <li>Créer des tableaux de bords interactifs avec Python,</li>
+                <li>Analyser les données pour en tirer de la valeur,</li>
+                <li>Créer des modèles prédictifs avec le machine learning </li>
+            </ul>
+        </p>
+        <p>Doté d'une esprit de synthèse de logique, mes compétences s'étendent de l'extraction et le nettoyage de données jusq'à la création de produits data enrichis par l'intelligence artificielle.</p>
+        <p>J'ai aussi développé des compétences en développement web, en particuler avec le framwork Django. Le résultat comme vous pouvez le constaté ce magnifique site de <a href="{% url 'course_list' %}">KmyProd</a>.</p>
+        <p>Mon espérience montre ma capacité à travailler en autonomie et au sein d'une équipe.</p>
+        <p>Besoin de mes services, je suis joignable sur:  kintymoustapha@gmail.com</p>
+        <p>- Moustapha K</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="tombon-block">
+  <div class="row">
+    <div class="col-md-6 order-2 order-md-12 tombon">
+
+    </div>
+    <div class="presentation-text col-md-6 order-first order-md-12">
+        <h3>Tombon MARENA</h3>
+        <hr class="divider">
+        <p>Juriste de formation, tombon est passionné par l’entreprenariat.</p>
+        <p>Après ses études Universitaires de Droit sanctionné par un Master 2, option Citoyenneté, Action Humanitaire, Mine et Energie à l’institut des droits de l’homme et de la paix IDHP, tombon s'est investi à défendre les droits de tout être humain</p>
+        <p>Expert en droit de l’homme plus précisément sur la question de la protection de l’intégrité physique des détenus, Tombon s'engagea avec Moustapha et Idrissa dans une avanture qui leur passionne, en mettant sur pied la société KmyProd.</p>
+        <p>Tombon dirige aujourd'hui le secteur marketing et de l’immobilier de la société KmyProd.</p>
+        <p>Pour toute question sur la société, le volet marketing ou immobilier, vous pouvez le joindre sur: tombon28@outlook.fr</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="idrissa-block">
+  <div class="row">
+    <div class="col-md-6 order-2 order-md-12 idrissa">
+
+    </div>
+    <div class="presentation-text col-md-6 order-first order-md-12">
+      <h3>Idrissa YANKATTE</h3>
+      <hr class="divider">
+      <p>
+          Après l’obtention de son baccalauréat, Idrissa a intégré la faculté de médecine de l’université Cheikh Anta Diop de Dakar.
+      </p>
+      <p>
+          Diplômé d'un master, il décida de poursuivre ses études de doctorat en se spécialisant en neuro-pédiatrie et en dermatologie.
+      </p>
+      <p>
+          Animés par le besoin de contribuer à l'amélioration des systèmes de santé au sénégal, Idrissa, Moustapha et Tombon souhaitent mettre en place dans un future proche, des structures para-privées dans certaines localités du pays pour leurs faciliter la tâche et l’accès aux soins médicaux de qualités.
+      </p>
+      <p>
+          Étant le spécialiste du domaine, Idrissa sera amené à diriger ce secteur de KmyProd.
+      </p>
+
+      <p>
+            Passionné par l'agro-business, Idrissa coordonne aujourd'hui le secteur agricol de KmyProd.
+      </p>
+      <p>Pour plus d'infos, n’hésitez à le joindre sur:  yankatteidrissa@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
