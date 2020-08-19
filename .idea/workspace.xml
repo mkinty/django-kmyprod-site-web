@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c94c209a-949a-41c3-bae8-011718c42bce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/templates/about/contact/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/contact/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/templates/about/instructors/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/instructors/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/templates/about/kmyprod/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/kmyprod/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/templates/about/projets/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/projets/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/templates/about/services/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/services/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
