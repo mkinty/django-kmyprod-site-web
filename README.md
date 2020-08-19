@@ -4,9 +4,9 @@
 
 Développer un site web dynamique structuré en 3 grandes parties :
 
-* Une partie descriptive de KmyProd (les offres, services et produits de KmyProd),
+* Une partie descriptive de KmyProd (offres, services et produits de KmyProd),
 * Une partie dédié à des cours en ligne de KmyProd,
-* Et une dernière  partie pour blog.
+* Et une dernière  partie pour le blog KmyProd.
 
 ### Objectif
 
