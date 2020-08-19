@@ -46,6 +46,27 @@
 
 
 /* SERVICES */
+#services .button1:hover
+{
+  background: white;
+  color: #003300;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+#services .button1
+{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7f9e9b;
+  border: 1px solid #7f9e9b;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 18px 50px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+  background: transparent;
+}
 
 #services
 {
@@ -74,6 +95,11 @@
   text-align: center;
   color: #003300;
   font-weight:bold;
+}
+
+.services-block a
+{
+  text-align: center;
 }
 
 .services-block p
@@ -119,6 +145,62 @@
   color:#485754;
 }
 
+
+
+/* PROFESSEURS & presentation*/
+
+
+.presentation{
+    padding: 80px 40px 80px 40px;
+
+}
+
+.presentation .col-sm-6 {
+  padding-bottom: 30px;
+}
+
+.prest-profile img {
+	width: 150px;
+	height: 150px;
+}
+
+.prest-block
+{
+
+  text-align: center;
+  padding: 35px 35px 20px 35px;
+  background: white;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.prest-body{
+    margin-top:20px;
+}
+
+
+.prest-title{
+    color: #003300;
+    font-family:'Roboto', sans-serif;
+}
+
+.prest-post{
+    color:#485754;
+    font-family:'Roboto', sans-serif;
+}
+
+.prest-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #687270;
+    text-align: left;
+}
+
+.prest{
+    margin-bottom:40px;
+
+}
 
 
 
@@ -264,6 +346,152 @@
 }
 
 
+
+/* BEGIN TEAM */
+
+/* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.teachers{
+    background: white;
+    border-radius: .45rem;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    margin:50px;
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 60px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    font-size: 14px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* END TEAM */
+
+
+
+
+
+
+
 /* FOOTER */
 
 footer
@@ -407,6 +635,8 @@ color: #003300 !important;
     text-align:center;
 }
 
-#more {
+/* READ MORE AND READ LESS */
+
+#kmyprod_more, #moustaphak_more, #tombon_more, #idrissa_more {
   display: none;
 }

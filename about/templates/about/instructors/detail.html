@@ -38,10 +38,13 @@
       <div class="kmyprod-prof-block">
         <h3>Qui sont-ils ?</h3>
         <hr class="red-divider">
-        <p>Nos professeurs sont soigneusement sélectionnés par notre équipe d'admissions, pour vous offire une meilleur pédagogie possible.
-            De parcours mathématiques appliquées, statistiques, informatique, sciences de la vie et de la terre, droit, lettre, anglais, médecine, etc..., ils sont tous expérimentés dans leurs domaines.
+        <p>
+            Nos professeurs sont soigneusement sélectionnés par notre équipe d'admissions, pour vous offire une meilleur pédagogie possible.
+            De parcours mathématiques appliquées, statistiques, informatique, physique-chimie sciences de la vie et de la terre, droit, lettre, anglais, médecine,
+            etc..., ils sont tous expérimentés dans leurs domaines.
             Ils travailleront avec vous sur des notions de cours mal assimilées, sur de nouveaux conceptes, sur des exercices d’applications,
-et vous offriront des conseils en méthodologie et organisation du travail.</p>
+            et vous offriront des conseils en méthodologie et organisation du travail.
+        </p>
 
       </div>
     </div>
@@ -54,67 +57,227 @@ et vous offriront des conseils en méthodologie et organisation du travail.</p>
 </div>
 
 
-
-<!-- Professeurs -->
-
-<div class="professeurs">
-    <div class = "row">
-
-       <div class = "col-md-4 prof">
-          <div class="prof-block">
-              <div class="prof-profile">
-                  <img class="card-img-top rounded-circle" src='{% static "img/prof_moustaphak.jpg" %}' alt="Moustapha KINTY">
-              </div>
-              <div class="prof-body">
-                <h5 class="prof-title">Moustapha Kinty</h5>
-                <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
-                <p class="prof-text">
-                    Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science.
-                    Après sa formation chez Jedha, il a intégré l'équite enseignant de Jedha comme assistant formateur en data science. Moustapha enseigne aussi les mathématiques chez Acadomia.
-                    Déternimé à réaliser son rêve, il co-fonde KmyProd avec Tombon et Idrissa, deux de ses amis.
-                </p>
-              </div>
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <div class="teachers">
+            <h5 class="section-title h1">Equipe Enseignant</h5>
+        </div>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src='{% static "img/prof_moustaphak.jpg" %}' alt="card image"></p>
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques,
+                                        Moustapha s'est ensuite spécialisé en data science. [...]
+                                    </p>
+                                    <a type="button" style="color: #007b5e;" class="nav-toggle">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques,
+                                        Moustapha s'est ensuite spécialisé en data science.
+                                        Après sa formation chez Jedha, il a intégré l'équite enseignant de Jedha comme assistant formateur en data science.
+                                        Moustapha enseigne aussi les mathématiques chez Acadomia.
+                                        Déternimé et ayant envie de relever de nouveaux défis, il co-fonde KmyProd avec Tombon et Idrissa, deux de ses amis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
-
-       <div class = "col-md-4 prof">
-          <div class="prof-block">
-              <div class="prof-profile">
-                  <img class="card-img-top rounded-circle" src='{% static "img/prof_tombon.jpg" %}' alt="Moustapha KINTY">
-              </div>
-              <div class="prof-body">
-                <h5 class="prof-title">Tombon Maréna</h5>
-                <h6 class="prof-post">Co-founder @ KmyProd</h6>
-                <p class="prof-text">
-                    Tombon est le directeur marketing, immobilier et co-fondateur de KmyProd. Juriste de formation, Tombon est un grand défendeur des droits de tout être humain
-                    Expert en droit de l’homme plus précisément sur la question de la protection de l’intégrité physique des détenus,
-                    Tombon accompagne plusieurs jeunes dans l'aquisition des connaissances et la lutte pour leur droit.
-                </p>
-              </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src='{% static "img/prof_tombon.jpg" %}' alt="card image"></p>
+                                    <h4 class="card-title">Tombon Maréna</h4>
+                                    <h6 class="prof-post">Co-founder @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Tombon est le directeur marketing, immobilier et co-fondateur de KmyProd. Juriste de formation, Tombon est un grand défendeur des droits de tout être humain. [...]
+                                    </p>
+                                    <a type="button" style="color: #007b5e;" class="nav-toggle">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Tombon Maréna</h4>
+                                    <h6 class="prof-post">Co-founder @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Tombon est le directeur marketing, immobilier et co-fondateur de KmyProd. Juriste de formation, Tombon est un grand défendeur des droits de tout être humain
+                                        Expert en droit de l’homme plus précisément sur la question de la protection de l’intégrité physique des détenus,
+                                        Tombon accompagne plusieurs jeunes dans l'aquisition des connaissances et la lutte pour leur droit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
-
-       <div class = "col-md-4 prof">
-          <div class="prof-block">
-              <div class="prof-profile">
-                  <img class="card-img-top rounded-circle" src='{% static "img/prof_idrissa.jpg" %}' alt="Moustapha KINTY Bureau-prof">
-              </div>
-              <div class="prof-body">
-                <h5 class="prof-title">Idrissa Yankatte</h5>
-                <h6 class="prof-post">Co-founder @ KmyProd</h6>
-                <p class="prof-text">
-                    Idrissa est le directeur agricol et co-fondateurs de KmyProd. Passionné par l'agro-business,
-                    Idrissa coordonne aujourd'hui le secteur agroalimentaire de KmyProd.
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src='{% static "img/prof_idrissa.jpg" %}' alt="card image"></p>
+                                    <h4 class="card-title">Idrissa Yankatte</h4>
+                                    <h6 class="prof-post">Co-founder @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Idrissa est le directeur agricole et co-fondateurs de KmyProd. Passionné par l'agro-business, Idrissa coordonne aujourd'hui le secteur agroalimentaire de KmyProd. [...]
+                                    </p>
+                                    <a type="button" style="color: #007b5e;" class="nav-toggle">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Idrissa Yankatte</h4>
+                                    <h6 class="prof-post">Co-founder @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Idrissa est le directeur agricole et co-fondateurs de KmyProd. Passionné par l'agro-business, Idrissa coordonne aujourd'hui le secteur agroalimentaire de KmyProd.
                     Médecin en formation, Idrissa ne sèche d'encourager les jeunes à embrasser la science médicale. Préoccupé par la santé de tout être humain, Idrissa intervient aussi dans des structures para-privées de manière bénovol.
-                </p>
-              </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-       </div>
+            <!-- ./Team member -->
+            <!-- comment other teachers not exist
+            <-- Team member --
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src='{% static "img/prof_moustaphak.jpg" %}' alt="card image"></p>
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science. [...]
+                                    </p>
+                                    <a type="button" style="color: #007b5e;" class="nav-toggle">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science.
+                                        Après sa formation chez Jedha, il a intégré l'équite enseignant de Jedha comme assistant formateur en data science. Moustapha enseigne aussi les mathématiques chez Acadomia.
+                                        Déternimé à réaliser son rêve, il co-fonde KmyProd avec Tombon et Idrissa, deux de ses amis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <-- ./Team member --
+            <-- Team member --
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src='{% static "img/prof_moustaphak.jpg" %}' alt="card image"></p>
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science. [...]
+                                    </p>
+                                    <a type="button" style="color: #007b5e;" class="nav-toggle">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science.
+                                        Après sa formation chez Jedha, il a intégré l'équite enseignant de Jedha comme assistant formateur en data science. Moustapha enseigne aussi les mathématiques chez Acadomia.
+                                        Déternimé à réaliser son rêve, il co-fonde KmyProd avec Tombon et Idrissa, deux de ses amis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <-- ./Team member --
+            <-- Team member --
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src='{% static "img/prof_moustaphak.jpg" %}' alt="card image"></p>
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science. [...]
+                                    </p>
+                                    <a type="button" style="color: #007b5e;" class="nav-toggle">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Moustapha Kinty</h4>
+                                    <h6 class="prof-post">Co-founder & CEO @ KmyProd</h6>
+                                    <p class="card-text">
+                                        Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et statistiques, Moustapha s'est ensuite spécialisé en data science.
+                                        Après sa formation chez Jedha, il a intégré l'équite enseignant de Jedha comme assistant formateur en data science. Moustapha enseigne aussi les mathématiques chez Acadomia.
+                                        Déternimé à réaliser son rêve, il co-fonde KmyProd avec Tombon et Idrissa, deux de ses amis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <-- ./Team member --
+           end comment other teachers not exist -->
 
+
+
+        </div>
     </div>
-</div>
-
-<!-- endpresentation -->
-
+</section>
+<!-- Team -->
 
 {% endblock content %}

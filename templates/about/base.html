@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>{% block title %}  Kmyprod{% endblock %}</title>
-    <link href="{% static 'css/about/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'css/about/base.css' %}" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap4/bootstrap.min.css' %}">
 </head>
@@ -41,7 +41,6 @@
 <a href="#about">
   <span class="fa fa-chevron-up" aria-hidden="true"></span>
 </a>
-    <h5>Moustapha KINTY</h5>
     <h5>Copyright &copy; 2020 KmyProd - Tous Droits Réservés</h5>
 </footer>
 
@@ -53,22 +52,79 @@
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
   <script>
-      function lire_plus_ou_moin() {
-      var d = document.getElementById("dots");
-      var plus_de_text = document.getElementById("more");
-      var monBoutton = document.getElementById("mybutton");
-      if (d.style.display === "none") {
-        d.style.display = "inline";
-        plus_de_text.style.display = "none";
-        monBoutton.innerHTML = "Lire plus";
+      function kmyprod_plus_ou_moin() {
+      var kmyprod = document.getElementById("kmyprod_less");
+      var kmyprod_more = document.getElementById("kmyprod_more");
+      var kmyprod_button = document.getElementById("kmyprod_button");
+
+
+      if (kmyprod.style.display === "none") {
+        kmyprod.style.display = "inline";
+        kmyprod_more.style.display = "none";
+        kmyprod_button.innerHTML = "Lire plus";
       } else {
-        d.style.display = "none";
-        plus_de_text.style.display = "inline";
-        monBoutton.innerHTML = "Lire moins";
+        kmyprod.style.display = "none";
+        kmyprod_more.style.display = "inline";
+        kmyprod_button.innerHTML = "Lire moins";
       }
+
     }
 
 
+
+    function moustaphak_plus_ou_moin() {
+      var moustaphak = document.getElementById("moustaphak_less");
+      var moustaphak_more = document.getElementById("moustaphak_more");
+      var moustaphak_button = document.getElementById("moustaphak_button");
+
+
+      if (moustaphak.style.display === "none") {
+        moustaphak.style.display = "inline";
+        moustaphak_more.style.display = "none";
+        moustaphak_button.innerHTML = "Lire plus";
+      } else {
+        moustaphak.style.display = "none";
+        moustaphak_more.style.display = "inline";
+        moustaphak_button.innerHTML = "Lire moins";
+      }
+
+    }
+
+
+
+    function tombon_plus_ou_moin() {
+      var tombon = document.getElementById("tombon_less");
+      var tombon_more = document.getElementById("tombon_more");
+      var tombon_button = document.getElementById("tombon_button");
+
+      if (tombon.style.display === "none") {
+        tombon.style.display = "inline";
+        tombon_more.style.display = "none";
+        tombon_button.innerHTML = "Lire plus";
+      } else {
+        tombon.style.display = "none";
+        tombon_more.style.display = "inline";
+        tombon_button.innerHTML = "Lire moins";
+      }
+
+    }
+
+
+    function idrissa_plus_ou_moin() {
+      var idrissa = document.getElementById("idrissa_less");
+      var idrissa_more = document.getElementById("idrissa_more");
+      var idrissa_button = document.getElementById("idrissa_button");
+
+      if (idrissa.style.display === "none") {
+        idrissa.style.display = "inline";
+        idrissa_more.style.display = "none";
+        idrissa_button.innerHTML = "Lire plus";
+      } else {
+        idrissa.style.display = "none";
+        idrissa_more.style.display = "inline";
+        idrissa_button.innerHTML = "Lire moins";
+      }
+    }
   </script>
 
 

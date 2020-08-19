@@ -13,31 +13,6 @@
     weight:100%;
 }
 
-.moustapha{
-  background-image: url('{% static 'img/moustaphak.jpg' %}');
-  padding: 20px 0 130px;
-  height:100%;
-  max-width : 100%;
-  height: 755px;
-}
-
-.tombon{
-  background-image: url('{% static 'img/tombon.jpg' %}');
-  padding: 20px 0 120px;
-  height:100%;
-  max-width : 100%;
-  height: 755px;
-}
-
-
-.idrissa{
-  background-image: url('{% static 'img/idrissa.jpg' %}');
-  padding: 20px 0 130px;
-  height:100%;
-  max-width : 100%;
-  height: 755px;
-}
-
 </style>
 
 <!-- hearder -->
@@ -69,6 +44,9 @@
         <p>
           Nous accompagnons les élèves dans l'acquisition des connaissances et leur mise et pratique. Tout élève de KmyProd bénéficie d'un suivi personalisé, en ligne ou à domicile.
         </p>
+          <div class="text-center">
+            <a href="{% url 'instructors' %}"  class="button1">Les Professeurs</a>
+          </div>
       </div>
     </div>
     <div class="col-md-4">
@@ -78,6 +56,9 @@
         <p>Un développement durable nécessite la mise en valeur des ressources naturelles</p>
         <p>Mettre l’accent sur le secteur agricole est non seulement un moyen pour KmyProd de mettre en valeur des produits locaux en procédant à leur production et à leur commercialisation, mais aussi de revaloriser ce secteur dans les zones rurales</p>
         <p>Le principal objectif de KmyProd dans ce secteur est de vous offrir des produits locaux de très bonne qualité.</p>
+        <div class="text-center">
+          <a href="{% url 'services' %}"  class="button1">Découvrir les produits</a>
+        </div>
       </div>
     </div>
     <div class="col-md-4">
@@ -87,6 +68,9 @@
         <p>Pour avoir une bonne rentabilité de son investissement locatif, vous devez commencer par bien savoir la calculer. </p>
         <p>Selon les paramètres pris en compte, vous pouvez vous baser sur la rentabilité brute, la rentabilité nette de frais et charges, ou bien la rentabilité nette.</p>
         <p>Chez KmyProd, nous avons mis à votre disposition une équipe compétente et dinamique, pour vous aider à optimiser la rentabilité de vos investissements locatifs.</p>
+        <div class="text-center">
+          <a href="{% url 'services' %}"  class="button1">Découvrir les offres</a>
+        </div>
       </div>
     </div>
   </div>
@@ -102,12 +86,12 @@
         <hr class="red-divider">
       {% autoescape on %}
         <p>
-            Une Société à Responsabilité limité dénommer KMYPROD qui désigne KINTY MARENA YANKATTE PRODUCTIONS. Basée au Sénégal, KmyProd est le fruit de trois jeunes Sénéglais, <a href="#moustapha-block">Moustapha KINTY</a>, <a href="#tombon-block">Tombon MARENA</a> et <a href="#idrissa-block">Idrissa YANKATTE</a>, animés par l'envie de contribuer au développement du continent Africain.
+            Une Société à Responsabilité limité dénommer KMYPROD qui désigne KINTY MARENA YANKATTE PRODUCTIONS. Basée au Sénégal, KmyProd est le fruit de trois jeunes Sénéglais, <a style="color: #007b5e;" href="#prest-moustaphak">Moustapha KINTY</a>, <a style="color: #007b5e;" href="#prest-tombon">Tombon MARENA</a> et <a style="color: #007b5e;" href="#prest-idrissa">Idrissa YANKATTE</a>, animés par l'envie de contribuer au développement du continent Africain.
         <br>
         <br>
             Etant conscient qu’un développement durable nécessite la mise en valeur des ressources naturelles nous avons décidé de mettre l’accent sur le secteur agricole qui d’ailleurs nous tient à cœur car, depuis tout petit nous cultivons la terre avec nos parents. Ce qui nous donne une certaine connaissance et maitrise de la culture de l’arachide, du riz, du maïs, etc. Nous avons décidé d’orienter notre projet dans ce secteur parce qu’il est à la base du développement local et nous cherchons tout simplement à le valoriser afin de réduire considérablement le manque d’emploi et de permettre aux jeunes paysans de travailler dans la dignité pour satisfaire leurs besoins et ceux de leur famille et éviter en même temps l’exode rural.
-          <span id="dots"><strong>...</strong></span>
-          <span id="more">
+          <span id="kmyprod_less"><strong>[...]</strong></span>
+          <span id="kmyprod_more">
         <br>
         <br>
             Nous avons constaté en outre, qu’un développement durable passe nécessairement par la mise en valeur des produits locaux, c’est la raison pour laquelle nous avons décidé de procéder à leur production et à leur commercialisation. De ce commerce nous cherchons à répondre aux besoins alimentaires de la population locale à un prix raisonnable pour minimiser l’importation et favoriser leurs consommations.
@@ -119,12 +103,12 @@
             Avec KmyProd nous envisageons de créer les bases d’un développement durable en mettant l’accent sur la production et la commercialisation des produits locaux afin de réduire considérablement le chômage. Nous cherchons également à sauvegarder la dignité de l’être humain par la création des conditions de travail descend permettant à tout citoyen ambitieux de gagner sa vie honnêtement.
         </span>
         </p>
-          <button type="button"
-              onclick="lire_plus_ou_moin()"
-              class="btn btn-link"
-              id="mybutton">
+          <a type="button" style="color: #007b5e;"
+              onclick="kmyprod_plus_ou_moin()"
+              class="nav-toggle"
+              id="kmyprod_button">
               Lire plus
-          </button>
+          </a>
     {% endautoescape %}
       </div>
     </div>
@@ -132,81 +116,96 @@
 </div>
 
 
-
 <!-- presentation -->
 
-<div class="container-fluid" id="moustapha-block">
-  <div class="row">
-    <div class=" col-md-6 order-2 order-md-12 moustapha">
+<div class="presentation" id="team-assoce">
+    <div class = "row">
+
+       <div class = "col-md-4 prest" id="prest-moustaphak">
+          <div class="prest-block">
+              <div class="prest-profile">
+                  <img class="card-img-top rounded-circle" src='{% static "img/prof_moustaphak.jpg" %}' alt="Moustapha KINTY">
+              </div>
+              <div class="prest-body">
+                <h5 class="prest-title">Moustapha Kinty</h5>
+                <h6 class="prest-post">Data Scientist | Co-founder & CEO @ KmyProd</h6>
+                <p class="prest-text">
+                    Moustapha est le CEO et co-fondateur de KmyProd. Diplômé en mathématiques appliquées et informatique, Moustapha s'est ensuite spécialisé en data science.
+                    <span id="moustaphak_less"><strong>[...]</strong></span>
+                    <span id="moustaphak_more">
+                    Après sa formation chez Jedha où il a développé des compétences en data science et en programmation en Python qui s'étendent de l'extraction et le nettoyage de données jusq'à la création de produits data enrichis par l'intelligence artificielle, Moustapha a intégré l'équite enseignant de Jedha comme assistant formateur en data science.
+                    Mathématicien, statisticien de formation, Moustapha enseigne les mathématiques chez Acadomia.
+                    Moustapha dispose aussi des compétences en développement web, en particuler avec le framwork Django. Résultat, après avoir co-fondé KmyProd avec Tombon et Idrissa, Moustapha décida de développer ce magnifique site de KmyProd avec le framework django.
+                     </span>
+                </p>
+                  <a type="button" style="color: #007b5e;"
+                      onclick="moustaphak_plus_ou_moin()"
+                      class="nav-toggle"
+                      id="moustaphak_button">
+                      Lire plus
+                  </a>
+              </div>
+            </div>
+       </div>
+
+       <div class = "col-md-4 prest" id="prest-tombon">
+          <div class="prest-block">
+              <div class="prest-profile">
+                  <img class="card-img-top rounded-circle" src='{% static "img/prof_tombon.jpg" %}' alt="Moustapha KINTY">
+              </div>
+              <div class="prest-body">
+                <h5 class="prest-title">Tombon Maréna</h5>
+                <h6 class="prest-post">Co-founder @ KmyProd</h6>
+                <p class="prest-text">
+                    Tombon est le directeur marketing, immobilier et co-fondateur de KmyProd. Juriste de formation, Tombon est passionné par l’entreprenariat.
+                    <span id="tombon_less"><strong>[...]</strong></span>
+                    <span id="tombon_more">
+                    Diplômé en droit, option Citoyenneté, Action Humanitaire, Mine et Energie, Tombon s’est investi à défendre les droits de tout être humain en vue de sauvegarder la dignité de l’espèce humaine car, la dignité est un principe matriciel, la raison d’être de l’ensemble des droits fondamentaux. Elle constitue en réalité, le fondement de la liberté, de la justice et de la paix dans le monde.
+                    Il résulte de l’article 23 de la déclaration  universelle des droits de l’homme que toute personne a droit à un travail et à une rémunération équitable et satisfaisante lui assurant ainsi qu’à sa famille une existence conforme à la dignité humaine. Pour concrétiser l’esprit de cette disposition, Tombon s’engage avec Moustapha et Idrissa dans une aventure qui leur passionne, en mettant sur pied la société Kmyprod.
+                    Spécialiste des questions de protection des droits humain, Tombon dirige aujourd’hui le secteur marketing et de l’immobilier de la société KmyProd.
+                    </span>
+                </p>
+                  <a type="button" style="color: #007b5e;"
+                      onclick="tombon_plus_ou_moin()"
+                      class="nav-toggle"
+                      id="tombon_button">
+                      Lire plus
+                  </a>
+              </div>
+            </div>
+       </div>
+
+       <div class = "col-md-4 prest" id="prest-idrissa">
+          <div class="prest-block">
+              <div class="prest-profile">
+                  <img class="card-img-top rounded-circle" src='{% static "img/prof_idrissa.jpg" %}' alt="Moustapha KINTY Bureau-prof">
+              </div>
+              <div class="prest-body">
+                <h5 class="prest-title">Idrissa Yankatte</h5>
+                <h6 class="prest-post">Co-founder @ KmyProd</h6>
+                <p class="prest-text">
+                    Idrissa est le directeur agricole et co-fondateurs de KmyProd.
+                    Diplômé d'un master, il décida de poursuivre ses études de doctorat en se spécialisant en neuro-pédiatrie et en dermatologie.
+                    <span id="idrissa_less"><strong>[...]</strong></span>
+                    <span id="idrissa_more">
+                    Passionné par l'agro-business, Idrissa coordonne aujourd'hui le secteur agroale de KmyProd.
+                    Médecin en formation, Idrissa ne sèche d'encourager les jeunes à embrasser la science médicale. Préoccupé par la santé de tout être humain, Idrissa intervient aussi dans des structures para-privées de manière bénovol.
+                    </span>
+                </p>
+                  <a type="button" style="color: #007b5e;"
+                      onclick="idrissa_plus_ou_moin()"
+                      class="nav-toggle"
+                      id="idrissa_button">
+                      Lire plus
+                  </a>
+                      </div>
+            </div>
+       </div>
 
     </div>
-    <div class="presentation-text col-md-6 order-first order-md-12" >
-        <h3>Moustapha KINTY - Data Scientist</h3>
-        <hr class="divider">
-        <p>Mathématicien, statisticien de formation, je dispose de bonnes compétences en algèbre linéaire, en fonctions de plusieurs variabres, en statistiques, en machine learning, et en programmation en Python.</p>
-        <p>J'ai travaillé sur plusieurs projets de machine learning, accompagné plusieurs stagiaires en data science chez Jedha.</p>
-        <p>Une bonne partie de mon travaille consiste à :</p>
-        <p>
-            <ul class="job">
-                <li>Extraire et nettoyer les données,</li>
-                <li>Créer des tableaux de bords interactifs avec Python,</li>
-                <li>Analyser les données pour en tirer de la valeur,</li>
-                <li>Créer des modèles prédictifs avec le machine learning </li>
-            </ul>
-        </p>
-        <p>Doté d'une esprit de synthèse de logique, mes compétences s'étendent de l'extraction et le nettoyage de données jusq'à la création de produits data enrichis par l'intelligence artificielle.</p>
-        <p>J'ai aussi développé des compétences en développement web, en particuler avec le framwork Django. Le résultat comme vous pouvez le constaté ce magnifique site de <a href="{% url 'course_list' %}">KmyProd</a>.</p>
-        <p>Mon espérience montre ma capacité à travailler en autonomie et au sein d'une équipe.</p>
-        <p>Besoin de mes services, je suis joignable sur:  kintymoustapha@gmail.com</p>
-        <p>- Moustapha K</p>
-    </div>
-  </div>
 </div>
 
-<div class="container-fluid" id="tombon-block">
-  <div class="row">
-    <div class="col-md-6 order-2 order-md-12 tombon">
+<!-- endpresentation -->
 
-    </div>
-    <div class="presentation-text col-md-6 order-first order-md-12">
-        <h3>Tombon MARENA</h3>
-        <hr class="divider">
-        <p>Juriste de formation, tombon est passionné par l’entreprenariat.</p>
-        <p>Après ses études Universitaires de Droit sanctionné par un Master 2, option Citoyenneté, Action Humanitaire, Mine et Energie à l’institut des droits de l’homme et de la paix IDHP, tombon s'est investi à défendre les droits de tout être humain</p>
-        <p>Expert en droit de l’homme plus précisément sur la question de la protection de l’intégrité physique des détenus, Tombon s'engagea avec Moustapha et Idrissa dans une avanture qui leur passionne, en mettant sur pied la société KmyProd.</p>
-        <p>Tombon dirige aujourd'hui le secteur marketing et de l’immobilier de la société KmyProd.</p>
-        <p>Pour toute question sur la société, le volet marketing ou immobilier, vous pouvez le joindre sur: tombon28@outlook.fr</p>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid" id="idrissa-block">
-  <div class="row">
-    <div class="col-md-6 order-2 order-md-12 idrissa">
-
-    </div>
-    <div class="presentation-text col-md-6 order-first order-md-12">
-      <h3>Idrissa YANKATTE</h3>
-      <hr class="divider">
-      <p>
-          Après l’obtention de son baccalauréat, Idrissa a intégré la faculté de médecine de l’université Cheikh Anta Diop de Dakar.
-      </p>
-      <p>
-          Diplômé d'un master, il décida de poursuivre ses études de doctorat en se spécialisant en neuro-pédiatrie et en dermatologie.
-      </p>
-      <p>
-          Animés par le besoin de contribuer à l'amélioration des systèmes de santé au sénégal, Idrissa, Moustapha et Tombon souhaitent mettre en place dans un future proche, des structures para-privées dans certaines localités du pays pour leurs faciliter la tâche et l’accès aux soins médicaux de qualités.
-      </p>
-      <p>
-          Étant le spécialiste du domaine, Idrissa sera amené à diriger ce secteur de KmyProd.
-      </p>
-
-      <p>
-            Passionné par l'agro-business, Idrissa coordonne aujourd'hui le secteur agricol de KmyProd.
-      </p>
-      <p>Pour plus d'infos, n’hésitez à le joindre sur:  yankatteidrissa@gmail.com</p>
-    </div>
-  </div>
-</div>
 
 {% endblock content %}
